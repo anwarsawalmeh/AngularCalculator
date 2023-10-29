@@ -1,0 +1,28 @@
+<div class="calcInputArea">
+  <div class="resultScreen">
+    <label class="display">{{display}}</label>
+    <!-- <div class="display">{{display}}</div> -->
+  </div>
+  <div class="numberInputSection">
+    <div class="numbers">
+      <button class="number" (click)="numClick(1)">1</button>
+      <button class="number" (click)="numClick(2)">2</button>
+      <button class="number" (click)="numClick(3)">3</button>
+      <button class="number" (click)="numClick(4)">4</button>
+      <button class="number" (click)="numClick(5)">5</button>
+      <button class="number" (click)="numClick(6)">6</button>
+      <button class="number" (click)="numClick(7)">7</button>
+      <button class="number" (click)="numClick(8)">8</button>
+      <button class="number" (click)="numClick(9)">9</button>
+      <button class="number" (click)="numClick(0)">0</button>
+    </div>
+    <div class="operations">
+      <button class="addition" (click)="operationClick('+')">+</button>
+      <button class="subtraction" (click)="operationClick('-')">-</button>
+      <button class="clear" (click)="operationClick('C')">C</button>
+      <button class="result" (click)="operationClick('=')">=</button>
+      
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
